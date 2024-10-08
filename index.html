@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet prefetch" href="https://cdn.rawgit.com/mfd/e7842774e037edf15919037594a79b2b/raw/665bdfc532094318449f1010323c84013d5af953/graphik.css">
+    <script src="script.js" defer></script>
+    <title>Make</title>
+</head>
+<body>
+   <div class="grid-container">
+        <header class="header">
+            <div class="header__logo">
+                <img src="src/images/logo.svg" alt="Logo">
+                <p class="p-14 ">Бауэр<span class="custom-span">Владислав Романович</span></p>
+            </div>
+            <div class="header__burger">
+                <a href="#"><img src="src/images/ico_menu.png" alt="Burger" id="burger" class="header-img"></a>
+            </div>
+        </header>
+        <div class="title">
+            <h1>Тестовое задание</h1>
+            <p class="p-lead">Уровень: Junior</p>
+        </div>
+        <div class="sidebar" id="sidebar">
+            <nav>
+                <ul>
+                    <li class="p-14 sidebar__li"><a href="#Greetings">Напутственное слово</a></li>
+                    <li class="p-14 sidebar__li"><a href="#Grid">Сетка</a></li>
+                    <li class="p-14 sidebar__li"><a href="#Typography">Типографика</a></li>
+                    <li class="p-14 sidebar__li"><a href="#Ui">UI</a></li>
+                </ul>
+            </nav>
+        </div>
+        <main class="main">
+            <section class="greetings" id="Greetings">
+                <p class="p-16">Привет! Твоё тестовое задание — грамотно заверстать эту прекрасную страничку. В шапке страницы укажи своё ФИО, так всем будет удобнее. В менюхе под иконкой бургером мы хотели бы также видеть твои данные. Ну что, поехали?</p>
+            </section>
+            <section class="grid" id="grid">
+                <div class="grid__title">
+                    <h2>Сетка</h2>
+                    <p class="p-16 grid__p_custom">
+                        Задание предполагает адаптивную вёрстку. Используется 3 состояния в зависимости от устройства. Сетка «резиновая» — переменной ширины.
+                    </p>
+                </div>
+                <div class="grid__device desktop">
+                    <h3 class="bold-h3">Десктоп (1200+)</h3>
+                    <div class="grid__device-info">
+                        <div class="device-info-block">
+                            <p class="p-14 gray-p">
+                                Контент
+                            </p>
+                            <h3 class="device-info-block-h3">1072-1312</h3>
+                        </div>
+                        <div class="device-info-block">
+                            <p class="p-14 gray-p">
+                                Колонок
+                            </p>
+                            <h3 class="device-info-block-h3">12</h3>
+                        </div>
+                        <div class="device-info-block">
+                            <p class="p-14 gray-p">
+                                Ширина колонки
+                            </p>
+                            <h3 class="device-info-block-h3">60-80</h3>
+                        </div>
+                        <div class="device-info-block">
+                            <p class="p-14 gray-p">
+                                Межколонник
+                            </p>
+                            <h3 class="device-info-block-h3">32</h3>
+                        </div>
+                    </div>
+                    <img src="src/images/pic_desktop.png" alt="Desktop">
+                </div>
+                <div class="grid__device tab">
+                    <h3 class="bold-h3">Планшет (736+)</h3>
+                    <div class="grid__device-info">
+                        <div class="device-info-block">
+                            <p class="p-14 gray-p">
+                                Контент
+                            </p>
+                            <h3 class="device-info-block-h3">672–928</h3>
+                        </div>
+                        <div class="device-info-block">
+                            <p class="p-14 gray-p">
+                                Колонок
+                            </p>
+                            <h3 class="device-info-block-h3">8</h3>
+                        </div>
+                        <div class="device-info-block">
+                            <p class="p-14 gray-p">
+                                Ширина колонки
+                            </p>
+                            <h3 class="device-info-block-h3">56-88</h3>
+                        </div>
+                        <div class="device-info-block">
+                            <p class="p-14 gray-p">
+                                Межколонник
+                            </p>
+                            <h3 class="device-info-block-h3">32</h3>
+                        </div>
+                    </div>
+                    <img src="src/images/pic_tab.png" alt="Tab">
+                </div>
+                <div class="grid__device phone">
+                    <h3 class="bold-h3">Телефон (320+)</h3>
+                    <div class="grid__device-info">
+                        <div class="device-info-block">
+                            <p class="p-14 gray-p">
+                                Контент
+                            </p>
+                            <h3 class="device-info-block-h3">296–424</h3>
+                        </div>
+                        <div class="device-info-block">
+                            <p class="p-14 gray-p">
+                                Колонок
+                            </p>
+                            <h3 class="device-info-block-h3">4</h3>
+                        </div>
+                        <div class="device-info-block">
+                            <p class="p-14 gray-p">
+                                Ширина колонки
+                            </p>
+                            <h3 class="device-info-block-h3">56-88</h3>
+                        </div>
+                        <div class="device-info-block">
+                            <p class="p-14 gray-p">
+                                Межколонник
+                            </p>
+                            <h3 class="device-info-block-h3">24</h3>
+                        </div>
+                    </div>
+                    <img src="src/images/pic_mob.png" alt="Phone">
+                </div>
+            </section>
+            <section class="typography" id="Typography">
+                <div class="typography__title">
+                    <h2>Типографика</h2>
+                    <p class="p-16 greetings">Используется шрифт Graphik. На телефонах стили типографики переопределяются</p>
+                </div>
+            </section>
+            <section class="ui" id="Ui">
+                <div class="ui__title">
+                    <h2>UI</h2>
+                    <p class="p-lead">Текстовое поле</p>
+                </div>
+            </section>
+        </main>
+        <div class="footer">
+            
+        </div>
+   </div> 
+</body>
+</html>
