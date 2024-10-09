@@ -159,6 +159,8 @@ body {
         width: 60%;
     }
 
+    /* Grid section */
+
     .grid__title{
         margin-bottom: 48px;
     }
@@ -196,7 +198,45 @@ body {
         width: 100%;
     }
     
+    /* Typography section */
+    .typography__title{
+        margin-bottom: 48px;
+    }
+
+    .examples-btns{
+        border-bottom: 1px solid #CBCBCC;
+        width: 100%;
+        margin: 0;
+        margin-bottom: 48px;
+    }
+
+    .examples-btn{ 
+        border: 2px solid transparent;
+        padding-bottom: 14px;
+        background-color: transparent;
+    }
+
+    .examples-btn:focus, .examples-btn:hover{
+        border-bottom: 2px solid #3E29E3;
+        color: #1B1B1B;
+        font-weight: 500;
+    }
+
+    /* хуета */
+
+    .list-item{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 32px;
+    }
     
+    .list-item p{
+        width: 30%;
+    }
+    .list-item h1{
+        margin: 0;
+    }
 
     /* Adaptive */
 

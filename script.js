@@ -2,7 +2,7 @@ let sbar = document.getElementById('sidebar')
 console.log(sbar)
 
 let checkScroll = ()=>{
-    if (window.scrollY >= 370){
+    if (window.scrollY >= 340){
         sbar.classList.add('sidebar-fixed')
     }
     else{
