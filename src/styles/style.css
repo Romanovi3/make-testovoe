@@ -310,7 +310,10 @@ body {
     .ui-input:invalid{
         border-bottom: 4px solid red;
     }
+    .input-valid{
 
+    }
+    
     .ui-input:focus + .ui-label,
     .ui-input:valid + .ui-label,
     .ui-input:invalid + .ui-label{

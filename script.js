@@ -3,24 +3,24 @@ let inputEmail = document.getElementById('input-email')
 let inputLabel = document.getElementById('input-label')
 let erMessage = document.getElementById('error-message')
 
+
 console.log(inputEmail, inputLabel, erMessage)
 
-let validation = ()=>{
-    setInterval(()=>{
-        if (inputEmail.validity.valid){
-            console.log('valid')
+
+let checkValidation = ()=>{
+    inputEmail.addEventListener('focusout', ()=>{
+        const emailPattern = /^[a-zA-Z0-9]+@[a-zA-Z]+\.[a-zA-Z]{2,3}$/;
+        if(emailPattern.test(inputEmail.value)){
+            alert('valid')
         }
         else{
-            console.log('invalid')
+            alert('invalid')
         }
-        clearInterval(checking)
-    },100)
-
+    })
 }
 
-let checkValidation= ()=>{
-    inputEmail.addEventListener('input', validation())
-}
+document.addEventListener('DOMContentLoaded', checkValidation())
+
 let checkScroll = ()=>{
     if (window.scrollY >= 340){
         sbar.classList.add('sidebar-fixed')
@@ -32,6 +32,5 @@ let checkScroll = ()=>{
 
 const checking = setInterval(()=>{
     checkScroll()
-    checkValidation()
 },100)
 
