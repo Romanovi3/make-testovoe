@@ -11,10 +11,16 @@ let checkValidation = ()=>{
     inputEmail.addEventListener('focusout', ()=>{
         const emailPattern = /^[a-zA-Z0-9]+@[a-zA-Z]+\.[a-zA-Z]{2,3}$/;
         if(emailPattern.test(inputEmail.value)){
-            alert('valid')
+            inputEmail.classList.remove('input-invalid')
+            inputLabel.classList.remove('input-label-invalid')
+            erMessage.innerText = ''
+            console.log('xyu')
         }
         else{
-            alert('invalid')
+            inputEmail.classList.add('input-invalid')
+            inputLabel.classList.add('input-label-invalid')
+            console.log('golova')
+            erMessage.innerText = 'Введите корректный E-mail...'
         }
     })
 }

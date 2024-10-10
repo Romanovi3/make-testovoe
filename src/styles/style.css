@@ -272,7 +272,7 @@ body {
     .ui-input{
         position: relative;
         outline: none;
-        background-color: transparent;
+        background-color: white;
         border: none;
         border-bottom: 2px solid #AEADAE;
         width: 30%;
@@ -290,41 +290,39 @@ body {
     }
 
     .ui-error{
-        color: red;
+        color: #E80F3B;
         position: absolute;
         left: 0;
         bottom: -25px;
         font-size: 14px;
         line-height: 20px;
-        display: none;
     }
 
     .ui-input:hover{
         border-bottom: 2px solid var(--blue-action);
     }
 
-    .ui-input:focus, .ui-input:valid{
+    .ui-input:focus, .input-valid{
         border-bottom: 4px solid var(--blue-action);
     }
-
-    .ui-input:invalid{
-        border-bottom: 4px solid red;
-    }
-    .input-valid{
-
-    }
-    
-    .ui-input:focus + .ui-label,
-    .ui-input:valid + .ui-label,
-    .ui-input:invalid + .ui-label{
+   
+    .ui-input:focus + .ui-label{
         transform: translate(0, -25px);
         font-size: 12px;
         line-height: 20px;
         color: var(--gray-p);
     }
 
-    .ui-input:invalid + .ui-label{
-        color: red;
+    .input-invalid{
+        border-bottom: 4px solid #E80F3B;
+    }
+
+    .input-label-invalid{
+        transform: translate(0, -25px);
+        font-size: 12px;
+        line-height: 20px;
+        color: #E80F3B;
+        
     }
     
 
