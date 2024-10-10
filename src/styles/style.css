@@ -1,6 +1,7 @@
 :root{
     --gray-p: #7D7D7D;
     --custom-cursor: url(/src/images/cursor.svg),pointer;
+    --blue-action:#3E29E3;
 }
 
 body, html{
@@ -137,7 +138,7 @@ body {
     }
 
     .sidebar__li a:focus{
-        color: #3E29E3;
+        color: var(--blue-action);
     }
     
     .sidebar-fixed {
@@ -214,15 +215,26 @@ body {
         border: 2px solid transparent;
         padding-bottom: 14px;
         background-color: transparent;
+        cursor: var(--custom-cursor);
+        transition: all 300ms ease;
     }
 
+    .disabled-btn{
+        background-color: gray;
+    }
     .examples-btn:focus, .examples-btn:hover{
-        border-bottom: 2px solid #3E29E3;
+        border-bottom: 2px solid var(--blue-action);
         color: #1B1B1B;
         font-weight: 500;
     }
 
     /* хуета */
+    
+    .examples-list-desktop{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
 
     .list-item{
         display: flex;
@@ -231,12 +243,89 @@ body {
         gap: 32px;
     }
     
-    .list-item p{
+    .list-item-f{
         width: 30%;
     }
-    .list-item h1{
+
+    .list-item-s{
         margin: 0;
     }
+
+    .examples-list-mobile{
+        display: none;
+    }
+
+    /* UI */
+
+    .ui__title{
+        margin-bottom: 48px;
+    }
+
+    .input-wrapper{
+        position: relative;
+    }
+
+    .input-wrapper p{
+        margin-bottom: 80px;
+    }
+
+    .ui-input{
+        position: relative;
+        outline: none;
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid #AEADAE;
+        width: 30%;
+        font-size: 16px;
+        line-height: 24px;
+        font-family: inherit;
+        transition: all 300ms ease;
+        z-index: 1;
+    }
+
+    .ui-label{
+        position: absolute;
+        left: 0;
+        transition: all 300ms ease-out;
+    }
+
+    .ui-error{
+        color: red;
+        position: absolute;
+        left: 0;
+        bottom: -25px;
+        font-size: 14px;
+        line-height: 20px;
+        display: none;
+    }
+
+    .ui-input:hover{
+        border-bottom: 2px solid var(--blue-action);
+    }
+
+    .ui-input:focus, .ui-input:valid{
+        border-bottom: 4px solid var(--blue-action);
+    }
+
+    .ui-input:invalid{
+        border-bottom: 4px solid red;
+    }
+
+    .ui-input:focus + .ui-label,
+    .ui-input:valid + .ui-label,
+    .ui-input:invalid + .ui-label{
+        transform: translate(0, -25px);
+        font-size: 12px;
+        line-height: 20px;
+        color: var(--gray-p);
+    }
+
+    .ui-input:invalid + .ui-label{
+        color: red;
+    }
+    
+
+
 
     /* Adaptive */
 

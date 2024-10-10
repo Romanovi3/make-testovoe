@@ -145,10 +145,75 @@
                         <button class="examples-btn p-16 gray-p" id="examples-btn-left">Десктоп</button>
                         <button class="examples-btn p-16 gray-p" id="examples-btn-right">Телефон</button>
                     </div>
-                    <div class="examples-list">
+                    <div class="examples-list-desktop" id="typo-desktop">
                         <div class="list-item">
-                            <p class="p-14 gray-p">Заголовок H1, 48/56, bold</p>
-                            <h1>Текст заголовка</h1>
+                            <p class="p-14 gray-p list-item-f">Заголовок H1, 48/56, bold</p>
+                            <h1 class="list-item-s">Текст заголовка</h1>
+                        </div>
+                        <div class="list-item">
+                            <p class="p-14 gray-p list-item-f">Заголовок H2, 32/40, bold</p>
+                            <h2 class="list-item-s">Текст заголовка</h2>
+                        </div>
+                        <div class="list-item">
+                            <p class="p-14 gray-p list-item-f">Заголовок H3, 24/32, medium</p>
+                            <h3 class="list-item-s">Текст заголовка</h3>
+                        </div>
+                        <div class="list-item">
+                            <p class="p-14 gray-p list-item-f">Заголовок H4, 18/28, medium</p>
+                            <h4 class="list-item-s">Текст заголовка</h4>
+                        </div>
+                        <div class="list-item">
+                            <p class="p-14 gray-p list-item-f">Лид P_Lead, 24/32, regular</p>
+                            <p class="list-item-s p-lead">Текст лида</p>
+                        </div>
+                        <div class="list-item">
+                            <p class="p-14 gray-p list-item-f">Крупный текст P_18, 18/28, regular</p>
+                            <p class="list-item-s p-18">Крупный текст</p>
+                        </div>
+                        <div class="list-item">
+                            <p class="p-14 gray-p list-item-f">Заголовок H1, 48/56, bold</p>
+                            <p class="list-item-s p-16">Основной текст</p>
+                        </div>
+                        <div class="list-item">
+                            <p class="p-14 gray-p list-item-f">Заголовок H1, 48/56, bold</p>
+                            <p class="list-item-s p-14">Вспомогательный текст</p>
+                        </div>
+                    </div>
+
+                    <!-- Доделать смену контента на мобильном устройстве и по нажатию кнопки -->
+
+                    <div class="examples-list-mobile" id="typo-mobile">
+                        <div class="list-item">
+                            <p class="p-14 gray-p list-item-f">Заголовок H1, 48/56, bold</p>
+                            <h1 class="list-item-s">Текст заголовка</h1>
+                        </div>
+                        <div class="list-item">
+                            <p class="p-14 gray-p list-item-f">Заголовок H2, 32/40, bold</p>
+                            <h2 class="list-item-s">Текст заголовка</h2>
+                        </div>
+                        <div class="list-item">
+                            <p class="p-14 gray-p list-item-f">Заголовок H3, 24/32, medium</p>
+                            <h3 class="list-item-s">Текст заголовка</h3>
+                        </div>
+                        <div class="list-item">
+                            <p class="p-14 gray-p list-item-f">Заголовок H4, 18/28, medium</p>
+                            <h4 class="list-item-s">Текст заголовка</h4>
+                        </div>
+                        <div class="list-item">
+                            <p class="p-14 gray-p list-item-f">Лид P_Lead, 24/32, regular</p>
+                            <p class="list-item-s p-lead">Текст лида</p>
+                        </div>
+                        <div class="list-item">
+                            <p class="p-14 gray-p list-item-f">Крупный текст P_18, 18/28, regular</p>
+                            <p class="list-item-s p-18">Крупный текст</p>
+                        </div>
+                        <div class="list-item">
+                            <p class="p-14 gray-p list-item-f">Заголовок H1, 48/56, bold</p>
+                            <p class="list-item-s p-16">Основной текст</p>
+                        </div>
+                        <div class="list-item">
+                            <p class="p-14 gray-p list-item-f">Заголовок H1, 48/56, bold</p>
+                            <p class="list-item-s p-14">Вспомогательный текст</p>
                         </div>
                     </div>
                 </div>
@@ -156,12 +221,17 @@
             <section class="ui" id="Ui">
                 <div class="ui__title">
                     <h2>UI</h2>
+                </div>
+                <div class="input-wrapper">
                     <p class="p-lead">Текстовое поле</p>
+                    <input type="email" name="email" id="input-email" class="ui-input" required>
+                    <label for="email" class="ui-label" id="input-label">E-mail</label>
+                    <span class="ui-error" id="error-message">Некорректный E-mail...</span>
                 </div>
             </section>
+            asdasd
         </main>
         <div class="footer">
-            
         </div>
    </div> 
 </body>
